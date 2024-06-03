@@ -589,8 +589,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "\xC4iti"
+  - "n-\xC4iti"
   - Hei, Punahilkka!
+  - n-Punahilkka
+  - Moikka.
   <IsPerson>k__BackingField: 1
 --- !u!1 &852780525
 GameObject:
@@ -1500,6 +1502,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9c3117137ce6ec43ab4d385f460d356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogText: {fileID: 1623804624}
+  nameText: {fileID: 1009532541}
+  dialogBox: {fileID: 363215653}
+  nameBox: {fileID: 1502671802}
 --- !u!4 &1319471606
 Transform:
   m_ObjectHideFlags: 0

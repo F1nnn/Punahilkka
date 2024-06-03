@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DialogActivator : MonoBehaviour
 {
@@ -8,16 +9,27 @@ public class DialogActivator : MonoBehaviour
     [SerializeField] private string[] lines;
 
     [field:SerializeField] public bool IsPerson { get; private set; }
+
     public bool CanDialogActivated { get; private set; }
     public bool IsDialogStarted { get; private set; }
 
 
+    private Mouse myMouse;
+
+
+    private void Start()
+    {
+        myMouse = Mouse.current;
+    }
+
+
     private void Update()
     {
-        if (CanDialogActivated)
+        if (CanDialogActivated && myMouse.leftButton.wasPressedThisFrame && !IsDialogStarted)
         {
             //n‰ytt‰‰ dialogin
             DialogManager.instance.ShowDialog(lines, IsPerson);
+            IsDialogStarted = true;
         }
     }
 
