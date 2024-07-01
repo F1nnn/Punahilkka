@@ -14,12 +14,20 @@ public class DialogActivator : MonoBehaviour
     public bool IsDialogStarted { get; private set; }
 
 
+    public bool isQuest;
+    private QuestManager questManager;
+    public int questNumber;
+
+
     private Mouse myMouse;
+
+
 
 
     private void Start()
     {
         myMouse = Mouse.current;
+        questManager = FindObjectOfType<QuestManager>();
     }
 
 
@@ -39,6 +47,10 @@ public class DialogActivator : MonoBehaviour
         {
             CanDialogActivated = true;
         }
+        if (isQuest)
+        {
+            StartQuest();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -47,6 +59,14 @@ public class DialogActivator : MonoBehaviour
         {
             CanDialogActivated = false;
         }
+    }
+
+    void StartQuest()
+    {
+        questManager.quests[questNumber].gameObject.SetActive(true);
+        questManager.quests[questNumber].StartQuest();
+
+        gameObject.SetActive(false);
     }
 
 }
