@@ -5,7 +5,7 @@ using UnityEngine;
 public class QuestObject : MonoBehaviour
 {
     public int questNumber;
-    public string lines;
+    public string[] lines;
 
     public QuestManager questManager;
 
