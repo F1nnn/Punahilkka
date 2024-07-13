@@ -46,18 +46,16 @@ public class DialogActivator : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             CanDialogActivated = true;
-        }
-        if (isQuest)
-        {
-            StartQuest();
-        }
-    }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            CanDialogActivated = false;
+            if (isQuest)
+            {
+                StartQuest();
+            }
+
+            if (IsDialogStarted)
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 
