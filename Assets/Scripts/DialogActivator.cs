@@ -14,6 +14,7 @@ public class DialogActivator : MonoBehaviour
     public bool IsDialogStarted { get; private set; }
 
 
+    //private bool canActivate;
     public bool isQuest;
     private QuestManager questManager;
     public int questNumber;
@@ -46,16 +47,21 @@ public class DialogActivator : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             CanDialogActivated = true;
+        }
+    }
 
-            if (isQuest)
-            {
-                StartQuest();
-            }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        //canActivate = false;
 
-            if (IsDialogStarted)
-            {
-                gameObject.SetActive(false);
-            }
+        if (isQuest)
+        {
+            StartQuest();
+        }
+
+        if (IsDialogStarted)
+        {
+            gameObject.SetActive(false);
         }
     }
 
