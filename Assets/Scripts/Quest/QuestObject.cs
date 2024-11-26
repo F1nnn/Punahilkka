@@ -14,6 +14,9 @@ public class QuestObject : MonoBehaviour
     public int itemToCollect;
     public int itemToCollectCount;
 
+    [SerializeField]
+    private int EXPammount;
+
 
     void Update()
     {
@@ -40,6 +43,7 @@ public class QuestObject : MonoBehaviour
     {
         questManager.ShowQuestText(lines[1]);
         questManager.questCompleted[questNumber] = true;
+        PlayerHealtManager.instance.AddPlayerEXP(EXPammount);
         gameObject.SetActive(false);
     }
 }

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - ScreenFader
+  - HP
+  - MP
+  - LoseHP
+  - LoseMP
   layers:
   - Default
   - TransparentFX

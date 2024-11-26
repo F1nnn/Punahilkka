@@ -14,7 +14,7 @@ public class DialogActivator : MonoBehaviour
     public bool IsDialogStarted { get; private set; }
 
 
-    //private bool canActivate;
+    private bool canActivate;
     public bool isQuest;
     private QuestManager questManager;
     public int questNumber;
@@ -52,7 +52,7 @@ public class DialogActivator : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //canActivate = false;
+        canActivate = false;
 
         if (isQuest)
         {
