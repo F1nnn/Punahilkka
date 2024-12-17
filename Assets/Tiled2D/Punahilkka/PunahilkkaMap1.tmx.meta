@@ -9,7 +9,27 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
   missingFiles: []
-  errors: []
+  errors:
+  - Errors detected in tileset 'obj_misk_atlas.tsx'. Check the tileset inspector
+    for more details. Your map may be broken until these are fixed.
+  - Errors detected in tileset 'build_atlas.tsx'. Check the tileset inspector for
+    more details. Your map may be broken until these are fixed.
+  - Errors detected in tileset 'flower.tsx'. Check the tileset inspector for more
+    details. Your map may be broken until these are fixed.
+  - Could not find tile 1487. Make sure the tilesets were successfully imported.
+  - Could not find tile 1519. Make sure the tilesets were successfully imported.
+  - Could not find tile 661. Make sure the tilesets were successfully imported.
+  - Could not find tile 662. Make sure the tilesets were successfully imported.
+  - Could not find tile 693. Make sure the tilesets were successfully imported.
+  - Could not find tile 694. Make sure the tilesets were successfully imported.
+  - Could not find tile 533. Make sure the tilesets were successfully imported.
+  - Could not find tile 534. Make sure the tilesets were successfully imported.
+  - Could not find tile 1832. Make sure the tilesets were successfully imported.
+  - Could not find tile 1833. Make sure the tilesets were successfully imported.
+  - Could not find tile 565. Make sure the tilesets were successfully imported.
+  - Could not find tile 566. Make sure the tilesets were successfully imported.
+  - Could not find tile 1864. Make sure the tilesets were successfully imported.
+  - Could not find tile 1865. Make sure the tilesets were successfully imported.
   warnings: []
   missingSortingLayers: []
   missingLayers: []

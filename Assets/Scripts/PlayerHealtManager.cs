@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerHealtManager : MonoBehaviour
 {
@@ -23,14 +24,14 @@ public class PlayerHealtManager : MonoBehaviour
     public float currentCake;
 
     public Image playerHealtbar;
-    public Text HPText;
+    public TMP_Text HPText;
 
     public Image playerManabar;
-    public Text MPText;
+    public TMP_Text MPText;
 
     public Image EXPbar;
-    public Text EXPtext;
-    public Text playerLevelText;
+    public TMP_Text EXPtext;
+    public TMP_Text playerLevelText;
 
     public float lerpSpeed;
 
