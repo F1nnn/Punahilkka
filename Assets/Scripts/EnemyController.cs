@@ -29,6 +29,13 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     private int damageToGive;
 
+    [SerializeField]
+    private GameObject projectile2Prefabs;
+
+    float nextFire;
+    float fireRate = 4f;
+
+
 
 
     void Start()
@@ -74,10 +81,20 @@ public class EnemyController : MonoBehaviour
 
             ChangeState(EnemyState.idle);
         }
-        else if (distance < chaseRadius)
+        else if (distance < attacRadius)
         {
-            PlayerHealtManager.instance.HurtPlayer(damageToGive);
+            if (Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                Shoot();
+                PlayerHealtManager.instance.HurtPlayer(damageToGive);
+            }
         }
+    }
+
+    void Shoot()
+    {
+        Instantiate(projectile2Prefabs, transform.position, transform.rotation);
     }
 
     private void SetAnimFloat(Vector2 setVector)
