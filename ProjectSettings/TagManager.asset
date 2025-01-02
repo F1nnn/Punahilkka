@@ -9,6 +9,7 @@ TagManager:
   - MP
   - LoseHP
   - LoseMP
+  - FullMP
   layers:
   - Default
   - TransparentFX
