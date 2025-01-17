@@ -141,4 +141,14 @@ public class PlayerHealtManager : MonoBehaviour
     {
         currentMP = maxMp;
     }
+
+    public float GetMaxMP()
+    {
+        return maxMp;
+    }
+
+    public float GetCurrentMP()
+    {
+        return currentMP;
+    }
 }

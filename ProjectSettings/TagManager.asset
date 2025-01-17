@@ -10,6 +10,7 @@ TagManager:
   - LoseHP
   - LoseMP
   - FullMP
+  - Enemy
   layers:
   - Default
   - TransparentFX
