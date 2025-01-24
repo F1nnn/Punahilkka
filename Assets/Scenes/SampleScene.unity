@@ -2861,6 +2861,7 @@ GameObject:
   - component: {fileID: 1063699300}
   - component: {fileID: 1063699301}
   - component: {fileID: 1063699302}
+  - component: {fileID: 1063699303}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -3165,6 +3166,19 @@ MonoBehaviour:
   EXPtext: {fileID: 2102827248}
   playerLevelText: {fileID: 752286306}
   lerpSpeed: 2
+--- !u!114 &1063699303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063699294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bf54db409b1954d9b25298002f0b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefabs: {fileID: 3706253310233996624, guid: 3e12a15b292a4cf49a0864c5a9a80cf4, type: 3}
 --- !u!1001 &1085274546
 PrefabInstance:
   m_ObjectHideFlags: 0
