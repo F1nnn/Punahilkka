@@ -1,4 +1,3 @@
-using SuperTiled2Unity.Editor.LibTessDotNet;
 using System;
 using System.Collections;
 using System.Collections.Generic;
